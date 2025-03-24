@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ruslana Semenenko</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./skills.html" class="nav-link">Skills</a>
+      <a href="./projects.html" class="nav-link">Projects</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <section class="p-4">
+        <h1 class="gradient-text text-center mb-8 slide-down">My Projects</h1>
+        
+        <!-- Project Filter -->
+        <div id="project-filter" class="mb-12">
+          <div class="flex flex-wrap justify-center gap-2 mb-8">
+            <button class="filter-btn btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn btn" data-filter="html">HTML/CSS</button>
+            <button class="filter-btn btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn btn" data-filter="node">Node.js</button>
+            <button class="filter-btn btn" data-filter="mongodb">MongoDB</button>
+          </div>
+          
+          <!-- Projects Grid -->
+          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Projects will be dynamically inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/projectFilter.js"></script>
+</body>
+</html>
